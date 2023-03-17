@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="NeFeS">
+  <meta name="author" content="Shuai Chen and Yash Bhalgat and Xinghui Li and Jiawang Bian and Kejie Li and Zirui Wang and Victor Adrian Prisacariu">
+  <meta name="generator" content="Jekyll v4.1.1">
+  <!-- <meta name="google-site-verification" content="JBKlcsa_OIsJMSW_b9Tv4dXqKDXLYXfAEntWJ8nXCc4" /> -->
+
+  <title>Refinement for Absolute Pose Regression with Neural Feature Synthesis</title>
+
+  <!-- Bootstrap core CSS -->
+  <link
+    rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+    crossorigin="anonymous">
+
+  <!-- Custom styles for this template -->
+  <link href="style.css" rel="stylesheet">
+
+  <style>
+  img { 
+    width: 100%; 
+  }
+  .paper-title {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  .authors-list .name {
+    font-size: 0.9em;
+    font-weight: bold;
+  }
+  .authors-list .affiliation {
+    font-size: 0.8em;
+  }
+  </style>
+</head>
+
+<body style="width: 100%; max-width: 1024px; margin-right: auto; margin-left: auto;">
+<main role="main" class="container">
+  <div class="paper-title">
+  <!-- title -->
+  <div class="row">
+    <div class="col">
+      <p class="long-name text-center">
+        <h4 class="name text-center">Refinement for Absolute Pose Regression with Neural Feature Synthesis </h4>
+      </p>
+      <!-- <br> -->
+      <!-- <p class="name text-center" style="color:grey">
+          ArXiv
+      </p> -->
+      
+    </div>
+  </div>
+
+  <br>
+
+  <!-- Authors -->
+  <div class="authors-list">
+    <div class="row">
+      <div class="col">
+        <p class="name text-center">
+        <a href="https://scholar.google.com/citations?user=c0xTh_YAAAAJ&hl=en"
+           target="_blank" >Shuai Chen</a>
+        </p>
+      </div>
+      <div class="col">
+        <p class="name text-center">
+        <a href="https://scholar.google.com/citations?user=q0VSEHYAAAAJ&hl=en"
+           target="_blank" >Yash Bhalgat</a>
+        </p>
+      </div>
+      <div class="col">
+        <p class="name text-center">
+        <a href="https://scholar.google.com/citations?user=XLlgbBoAAAAJ&hl=en"
+           target="_blank" >Xinghui Li</a>
+        </p>
+      </div>
+      <div class="col">
+        <p class="name text-center">
+        <a href="https://scholar.google.com/citations?user=zeGz5JcAAAAJ&hl=en&oi=sra"
+           target="_blank" >Jiawang Bian</a>
+        </p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        <p class="affiliation text-center">
+          <a href="http://active.vision"> Active Vision Lab</a>, University of Oxford
+        </p>
+      </div>
+      <div class="col">
+        <p class="affiliation text-center">
+          <a href="https://www.robots.ox.ac.uk/~vgg/"> Visual Geometry Group</a>, University of Oxford
+        </p>
+      </div>
+      <div class="col">
+        <p class="affiliation text-center">
+          <a href="http://active.vision"> Active Vision Lab</a>, University of Oxford
+        </p>
+      </div>
+      <div class="col">
+        <p class="affiliation text-center">
+          <a href="http://active.vision"> Active Vision Lab</a>, University of Oxford
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <p class="name text-center">
+        <a href="https://scholar.google.com/citations?hl=en&user=JBwsoCUAAAAJ"
+           target="_blank" >Kejie Li</a>
+        </p>
+      </div>
+      <div class="col">
+        <p class="name text-center">
+        <a href="https://scholar.google.com/citations?user=zCBKqa8AAAAJ&hl=en"
+           target="_blank" >Zirui Wang</a>
+        </p>
+      </div>
+      <div class="col">
+        <p class="name text-center">
+        <a href="http://www.robots.ox.ac.uk/~victor/"
+           target="_blank">Victor Adrian Prisacariu</a>
+        </p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col">
+        <p class="affiliation text-center">
+          <a href="http://active.vision"> Active Vision Lab</a>, University of Oxford
+        </p>
+      </div>
+      <div class="col">
+        <p class="affiliation text-center">
+          <a href="http://active.vision"> Active Vision Lab</a>, University of Oxford
+        </p>
+      </div>
+      <div class="col">
+        <p class="affiliation text-center">
+          <a href="http://active.vision"> Active Vision Lab</a>, University of Oxford
+        </p>
+      </div>
+    </div>
+  </div>
+  <br>
+
+  <div class="col text-center">
+    <!-- <a class="btn btn-outline-primary" href="https://arxiv.org/abs/2204.00559" role="button">Paper</a>
+    <a class="btn btn-outline-primary" href="https://github.com/ActiveVisionLab/DFNet" role="button">Code</a>
+    <a class="btn btn-outline-primary" href="https://www.robots.ox.ac.uk/~shuaic/DFNet2022/pretrain_models.tar.gz" role="button">Pre-trained</a> -->
+    <button type="button" class="btn btn-outline-secondary" disabled>Paper</button>
+    <button type="button" class="btn btn-outline-secondary" disabled>Code</button>
+    <button type="button" class="btn btn-outline-secondary" disabled>Pre-trained</button>
+  </div>
+  <br>
+
+  <br>
+
+  <div class="row">
+    <div class="col">
+
+      <!-- <img src="DFNet.png" alt="DFNet" width=50% > -->
+
+<!--       <h4>Supplementary</h4>
+      <video id="v0" width="100%" autoplay loop muted>
+        <source src="supp_video.mp4" type="video/mp4" />
+      </video> -->
+
+      <h4>Abstract</h4>
+      <p class="text-justify">
+        Absolute Pose Regression (APR) methods use deep neural networks to directly regress camera poses from RGB images. Despite their advantages in inference speed and simplicity, these methods still fall short of the accuracy achieved by geometry-based techniques. To address this issue, we propose a new model called the Neural Feature Synthesizer (NeFeS). Our approach encodes 3D geometric features during training and renders dense novel view features at test time to refine estimated camera poses from arbitrary APR methods. Unlike previous APR works that require additional unlabeled training data, our method leverages implicit geometric constraints during test time using a robust feature field. To enhance the robustness of our NeFeS network, we introduce a feature fusion module and a progressive training strategy. Our proposed method improves the state-of-the-art single-image APR accuracy by as much as 54.9% on indoor and outdoor benchmark datasets without additional time-consuming unlabeled data training.
+      </p>
+      <br>
+      <h4>Supplementary Video</h4>
+      <div class="embed-responsive embed-responsive-16by9">
+        <video controls>
+          <source src="supp_video.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+  <br>
+
+</main>
+</body>
+</html>
