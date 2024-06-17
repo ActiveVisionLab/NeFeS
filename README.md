@@ -9,11 +9,10 @@ and [Victor Prisacariu](https://scholar.google.com/citations?user=GmWA-LoAAAAJ&h
 
 **[Project Page](https://nefes.active.vision) | [Paper](https://arxiv.org/abs/2303.10087)**
 
-Code coming soon...
+Code coming really soon...
 
 [![NeFeS1](imgs/pipeline.png)](https://arxiv.org/abs/2303.10087)
 [![NeFeS2](imgs/nefes.png)](https://arxiv.org/abs/2303.10087)
-
 
 ## Installation
 
@@ -24,11 +23,13 @@ Code coming soon...
 ## Publications
 Please cite our paper and star this repo if you find our work helpful. Thanks!
 ```
-@article{chen2023refinement,
-  title={Refinement for Absolute Pose Regression with Neural Feature Synthesis},
-  author={Chen, Shuai and Bhalgat, Yash and Li, Xinghui and Bian, Jiawang and Li, Kejie and Wang, Zirui and Prisacariu, Victor Adrian},
-  journal={arXiv preprint arXiv:2303.10087},
-  year={2023}
+@inproceedings{Chen_2024_CVPR,
+  title={Neural Refinement for Absolute Pose Regression with Feature Synthesis},
+  author={Chen, Shuai and Bhalgat, Yash and Li, Xinghui and Bian, Jia-Wang and Li, Kejie and Wang, Zirui and Prisacariu, Victor Adrian},
+  booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+  month={June},
+  year={2024},
+  pages={20987-20996}
 }
 ```
 This code builds on previous camera relocalization pipelines, namely Direct-PoseNet and DFNet. Please consider citing:
