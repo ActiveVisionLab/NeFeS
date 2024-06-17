@@ -23,7 +23,7 @@ Code coming really soon...
 ## Publications
 Please cite our paper and star this repo if you find our work helpful. Thanks!
 ```
-@inproceedings{Chen_2024_CVPR,
+@inproceedings{chen2024nefes,
   title={Neural Refinement for Absolute Pose Regression with Feature Synthesis},
   author={Chen, Shuai and Bhalgat, Yash and Li, Xinghui and Bian, Jia-Wang and Li, Kejie and Wang, Zirui and Prisacariu, Victor Adrian},
   booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
