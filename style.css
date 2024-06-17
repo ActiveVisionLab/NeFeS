@@ -33,13 +33,15 @@ pre{
   margin: auto;
 }
 
-/*.sizer {
-  width: 70%;
-  position: relative;
-  margin: auto;
-
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.embed-responsive {
-   height:50%;
-}*/
+.centered-media {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+}

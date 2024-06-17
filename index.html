@@ -12,7 +12,7 @@
 
   <!-- Bootstrap core CSS -->
   <link
-    rel="stylesheet" 
+    rel="stylesheet"
     href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
     crossorigin="anonymous">
@@ -124,10 +124,7 @@
   <div class="col text-center">
     <a class="btn btn-outline-primary" href="https://arxiv.org/abs/2303.10087" role="button">Paper</a>
     <a class="btn btn-outline-primary" href="https://github.com/ActiveVisionLab/NeFeS" role="button">Code</a>
-    <!-- <a class="btn btn-outline-primary" href="https://www.robots.ox.ac.uk/~shuaic/DFNet2022/pretrain_models.tar.gz" role="button">Pre-trained</a> -->
-    <!-- <button type="button" class="btn btn-outline-secondary" disabled>Paper</button> -->
-    <!-- <button type="button" class="btn btn-outline-secondary" disabled>Code</button> -->
-    <button type="button" class="btn btn-outline-secondary" disabled>Pre-trained</button>
+    <a class="btn btn-outline-primary" href="https://www.youtube.com/watch?v=G8RF_xsdT2M" role="button">Video</a>
   </div>
   <br>
 
@@ -136,20 +133,63 @@
   <div class="row">
     <div class="col">
 
+      <img src="pipeline.png" alt="marepo" class="centered-media">
+            <img src="nefes.png" alt="marepo" class="centered-media">
+      <br>
+
       <h4>Abstract</h4>
+      <hr class="hr"/>
       <p class="text-justify">
         Absolute Pose Regression (APR) methods use deep neural networks to directly regress camera poses from RGB images. Despite their advantages in inference speed and simplicity, these methods still fall short of the accuracy achieved by geometry-based techniques. To address this issue, we propose a new model called the Neural Feature Synthesizer (NeFeS). Our approach encodes 3D geometric features during training and renders dense novel view features at test time to refine estimated camera poses from arbitrary APR methods. Unlike previous APR works that require additional unlabeled training data, our method leverages implicit geometric constraints during test time using a robust feature field. To enhance the robustness of our NeFeS network, we introduce a feature fusion module and a progressive training strategy. Our proposed method improves the state-of-the-art single-image APR accuracy by as much as 54.9% on indoor and outdoor benchmark datasets without additional time-consuming unlabeled data training.
       </p>
       <br>
-      <h4>Supplementary Video</h4>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+    <h4>High-level Concept</h4>
+    <hr class="hr"/>
       <div class="embed-responsive embed-responsive-16by9">
-        <video controls>
-          <source src="supp_video.mp4" type="video/mp4">
-        </video>
+      <video id="video1" width="80%" autoplay loop muted playsinline>
+          <source src="NeFeS_concept_video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
       </div>
     </div>
   </div>
+
+  <div class="row">
+    <div class="col">
+    <h4>Pose Refinement</h4>
+    <hr class="hr"/>
+      <div class="embed-responsive embed-responsive-16by9">
+      <video id="video2" width="80%" autoplay loop muted playsinline>
+          <source src="NeFeS_Visualization_video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+      </div>
+    </div>
+  </div>
+
   <br>
+  <div class="row">
+    <div class="col">
+      <h4>BibTeX</h4>
+      <hr class="hr"/>
+      <pre><code class="codebox" id="bibtex">
+      @InProceedings{Chen_2024_CVPR,
+        author    = {Chen, Shuai and Bhalgat, Yash and Li, Xinghui and Bian, Jia-Wang and Li, Kejie and Wang, Zirui and Prisacariu, Victor Adrian},
+        title     = {Neural Refinement for Absolute Pose Regression with Feature Synthesis},
+        booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+        month     = {June},
+        year      = {2024},
+        pages     = {20987-20996}
+      }
+      </code></pre>
+      <button class="btn btn-outline-secondary" onclick="copyToClipboard('#bibtex')">Copy bibtex</button>
+    </div>
+  </div>
 
 </main>
 </body>
