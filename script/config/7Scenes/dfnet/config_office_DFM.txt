@@ -1,0 +1,23 @@
+# ########################################## FM EXP. NFF APR ##########################################
+# test on DFM post processing using NeFeS. optimize APR model.
+model_name=DFM_NFF_APR
+# NeRF/NFF Signature
+expname=DFNet_NeFeS50_7Scenes_office_colmap
+ft_path=../logs/paper_models/nefes/NeFeS_office_colmap/nefes.tar
+tinyscale=4
+datadir=../data/7Scenes/office
+dataset_type=7Scenes_colmap
+# Feature CNN Signature
+pretrain_model_path=../logs/paper_models/apr/DFNet_office_colmap/checkpoint-office-colmap.pt
+pretrain_featurenet_path=../logs/paper_models/dfnet/DFNet_office/checkpoint-office.pt
+dfnet=True
+# Other Training Signature
+trainskip=1
+testskip=1
+df=2 # df=2 which use a input of 240x427
+load_pose_avg_stats=True
+freezeBN=True
+learning_rate=0.00001
+pose_only=2 # APR+NeFeS50
+svd_reg=True
+transient_at_test=True # exp.

@@ -1,0 +1,16 @@
+# Train nefes color only stage
+expname=nefes_kitchen_color_only
+basedir=../logs
+datadir=../data/7Scenes/redkitchen
+dataset_type=7Scenes_colmap
+trainskip=2
+testskip=10
+df=2 # train
+load_pose_avg_stats=True
+dfnet=True
+color_feat_fusion_nerfw_loss=True
+pretrain_featurenet_path=../logs/paper_models/dfnet/DFNet_kitchen/checkpoint-kitchen.pt
+transient_at_test=True
+tinyscale=4 # Train
+semantic=False # this is True for cambridge dataset
+# render_test=True # this is for testing the NeFeS rendering after training
