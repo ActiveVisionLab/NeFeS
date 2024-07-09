@@ -104,7 +104,7 @@ python test_refinement.py --config config/7Scenes/dfnet/config_stairs_DFM.txt --
 
 If your GPU is out-of memory, please consider reducing `--netchunk` parameters.
 
-If you want to try to see if NeFeS can refine your own APR model/pose estimator, you can add your data loader to `load_APR_and_FeatureNet()` in dm/direct_pose_model.py.
+If you want to try to see if NeFeS can refine your own APR model/pose estimator, you can add your network loader to `load_APR_and_FeatureNet()` in dm/direct_pose_model.py.
 Notice that it is recommanded to train your APR/pose estimator in openGL coordinate system (best way is through our dataloader, as we did for [PoseNet (pytorch)](https://github.com/ActiveVisionLab/direct-posenet/tree/main) and [MsTransformer](https://github.com/yolish/multi-scene-pose-transformer)). This is because our NeFeS is trained in openGL convention, otherwise you will have to adjust the cooridnate system yourself.
 
 ## Acknowledgement
