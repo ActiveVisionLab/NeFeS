@@ -13,7 +13,7 @@ scenes = [
 	'https://www.repository.cam.ac.uk/bitstream/handle/1810/251340/OldHospital.zip',
 	'https://www.repository.cam.ac.uk/bitstream/handle/1810/251336/ShopFacade.zip',
 	'https://www.repository.cam.ac.uk/bitstream/handle/1810/251294/StMarysChurch.zip',
-	'https://www.repository.cam.ac.uk/bitstream/handle/1810/251291/GreatCourt.zip',
+	# 'https://www.repository.cam.ac.uk/bitstream/handle/1810/251291/GreatCourt.zip',
 ]
 
 semantic = ['https://www.robots.ox.ac.uk/~shuaic/NeFeS2024/Cambridge_semantic.zip']
